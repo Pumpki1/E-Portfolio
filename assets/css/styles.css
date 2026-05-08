@@ -334,38 +334,41 @@ nav {
 /* ============================================
    ACHIEVEMENTS
 ============================================ */
-.achievement-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+.achievements-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.achievement-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.2rem 1.5rem;
-  background-color: var(--gray-light);
-  border-left: 4px solid var(--navy);
-  border-radius: 4px;
+.achievement-card{
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.achievement-item .year {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--navy);
-  min-width: 48px;
+.achievement-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.achievement-item .detail h4 {
-  font-size: 0.95rem;
+.achievement-title{
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--black);
+  border-bottom: 1px solid var(--gray-mid);
 }
 
-.achievement-item .detail p {
-  font-size: 0.88rem;
-  color: var(--gray-text);
+.achievement-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  background: var(--gray-light);
 }
 
 /* ============================================
