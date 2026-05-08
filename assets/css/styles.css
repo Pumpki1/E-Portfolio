@@ -437,3 +437,16 @@ footer {
   .hero h1 { font-size: 1.6rem; }
   .cards-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   PDF PREVIEW
+============================================ */
+
+.pdf-preview{
+  width: 100%;
+  height: 220px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: var(--white);
+}
