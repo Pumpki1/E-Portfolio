@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/E-Portfolio/assets/css/styles.css">
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
@@ -17,7 +18,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="works.html">Relevant Works</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="achievements.html" class="active">Achievements</a></li>
       <li><a href="contacts.html">Contact</a></li>
     </ul>
   </nav>
@@ -25,42 +26,77 @@
   <!-- ========== CONTENT ========== -->
   <div class="page">
     <div class="container">
-
       <h2 class="section-title fade-in">Achievements</h2>
       <div class="section-underline fade-in"></div>
-      <p class="fade-in" style="color: var(--gray-text); margin-bottom: 2rem; font-size: 0.95rem;">
-        A record of academic, extracurricular, and personal milestones
-        throughout my journey in Computer Engineering.
-      </p>
-
-      <div class="achievement-list">
-
-        <!-- ACHIEVEMENT ITEM — duplicate this block to add more -->
-        <div class="achievement-item fade-in">
-          <div class="year">2026</div>
-          <div class="detail">
-            <h4>Achievement Title Here</h4>
-            <p>Brief description — what it was, where, and what it meant to you.</p>
+      <div class="achievements-grid">
+        
+        <!-- ACHIEVEMENT CARD -->
+        <div class="achievement-card fade-in">
+          <div class="achievement-title">
+            Relational Database Certification
           </div>
+          
+          <img
+            src="assets/Certifications/FCC Relational Database Certificate.jpg"
+            alt="Java Certification"
+            class="achievement-image"
+          >
         </div>
 
-        <div class="achievement-item fade-in">
-          <div class="year">2025</div>
-          <div class="detail">
-            <h4>Achievement Title Here</h4>
-            <p>Brief description — what it was, where, and what it meant to you.</p>
+        <!-- ACHIEVEMENT CARD -->
+        <div class="achievement-card fade-in">
+          <div class="achievement-title">
+            AWS ML Certificate
           </div>
+          <a href="assets/Certifications/AWS_ML_CERTIFICATION_ILAO.pdf" target="_blank">
+            <iframe
+              src="assets/Certifications/jAWS_ML_CERTIFICATION_ILAO.pdf"
+              class="achievement-image">
+            </iframe>
+          </a>
         </div>
 
-        <div class="achievement-item fade-in">
-          <div class="year">2024</div>
-          <div class="detail">
-            <h4>Achievement Title Here</h4>
-            <p>Brief description — what it was, where, and what it meant to you.</p>
+        <!-- ACHIEVEMENT CARD -->
+        <div class="achievement-card fade-in">
+          <div class="achievement-title">
+            Wadhwani Foundation Certificate
           </div>
+          <a href="assets/Certifications/Wadhwani Foundation Certificate.pdf" target="_blank">
+            <iframe
+              src="assets/Certifications/Wadhwani Foundation Certificate.pdf"
+              class="achievement-image">
+            </iframe>
+          </a>
         </div>
+
+        <!-- ACHIEVEMENT CARD -->
+        <div class="achievement-card fade-in">
+          <div class="achievement-title">
+            ICPEP CPE Python Programming Competition
+          </div>
+
+          <img
+            src="assets/Certifications/Python Competition.jpg"
+            alt="Python Competition"
+            class="achievement-image"
+          >
+        </div>
+
+        <!-- ACHIEVEMENT CARD -->
+        <div class="achievement-card fade-in">
+          <div class="achievement-title">
+            Dean's List
+          </div>
+          <a href="assets/Certifications/Deans Lister.pdf" target="_blank">
+            <iframe
+              src="assets/Certifications/Deans Lister.pdf"
+              class="achievement-image">
+            </iframe>
+          </a>
+        </div>      
 
       </div>
+
     </div>
   </div>
 
@@ -69,6 +105,7 @@
     <p>&copy; 2026 Khen Mhar B. Ilao. All rights reserved.</p>
   </footer>
 
-  <script src="/E-Portfolio/assets/css/assets/js/nav.js"></script>
+  <script src="/E-Portfolio/assets/js/nav.js"></script>
+
 </body>
 </html>
