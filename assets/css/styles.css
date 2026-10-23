@@ -451,3 +451,90 @@ footer {
   margin-bottom: 1rem;
   background: var(--white);
 }
+
+/* ============================================
+   PROFILE / SKILLS TABLE (About Me)
+============================================ */
+.info-table {
+  border-top: 1px solid var(--navy);
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 1.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.info-value {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+.about-block p + p {
+  margin-top: 0.9rem;
+}
+
+.timeline {
+  border-left: 2px solid var(--navy);
+  margin-left: 6px;
+  margin-top: 0.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 1.6rem 1.75rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--navy);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 1px var(--navy);
+}
+
+.timeline-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.5;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-light);
+}
+
+.timeline-detail {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+}
