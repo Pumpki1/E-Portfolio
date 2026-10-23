@@ -147,10 +147,11 @@ nav {
 }
 
 .hero .bio {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--gray-text);
-  max-width: 520px;
+  max-width: 560px;
   line-height: 1.8;
+  text-wrap: balance;
 }
 
 /* ============================================
