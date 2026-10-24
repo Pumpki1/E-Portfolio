@@ -19,7 +19,7 @@
       <li><a href="about.html">About Me</a></li>
       <li><a href="works.html">Relevant Works</a></li>
       <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="contacts.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -27,12 +27,13 @@
   <div class="page">
     <div class="ab-wrap">
 
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="section-underline fade-in"></div>
 
       <div class="ab-layout">
 
         <!-- ===== PROFILE CARD ===== -->
-        <aside class="ab-profile">
+        <aside class="ab-profile fade-in">
           <img
             src="assets/css/assets/img/profile.jpg"
             alt="Khen Mhar B. Ilao"
@@ -42,32 +43,36 @@
           <div class="ab-name">Khen Mhar B. Ilao</div>
           <div class="ab-role">BS Computer Engineering</div>
 
+          <div class="ab-divider"></div>
+
           <div class="ab-facts">
-            <div>
+            <div class="ab-fact">
               <div class="ab-fact-label">Expected Graduation</div>
               <div class="ab-fact-value">June 2027</div>
             </div>
-            <div>
+            <div class="ab-fact">
               <div class="ab-fact-label">Location</div>
               <div class="ab-fact-value">Pasig City, Philippines</div>
             </div>
-            <div>
+            <div class="ab-fact">
               <div class="ab-fact-label">Focus Areas</div>
               <div class="ab-fact-value">Artificial Intelligence, Embedded Systems, IoT, Full Stack Development</div>
             </div>
-            <div>
+            <div class="ab-fact">
               <div class="ab-fact-label">Currently Seeking</div>
               <div class="ab-fact-value">Internship and Entry Level Opportunities</div>
             </div>
           </div>
         </aside>
 
-        <!-- ===== MAIN SHEET ===== -->
+        <!-- ===== MAIN COLUMN ===== -->
         <div class="ab-main">
 
           <!-- WHO I AM -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Profile</div>
             <h3 class="ab-heading">Who I Am</h3>
+            <div class="ab-rule"></div>
             <p>
               Khen Mhar B. Ilao is a fourth year Bachelor of Science in Computer Engineering
               student at Jose Rizal University. He builds practical solutions where software
@@ -89,74 +94,53 @@
           </section>
 
           <!-- WHAT I CAN DO -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Capabilities</div>
             <h3 class="ab-heading">What I Can Do</h3>
+            <div class="ab-rule"></div>
             <div class="ab-cap-grid">
-
               <div class="ab-cap">
-                <div class="ab-cap-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48">
-                    <circle cx="10" cy="24" r="4"/>
-                    <circle cx="38" cy="24" r="4"/>
-                    <circle cx="24" cy="10" r="4"/>
-                    <circle cx="24" cy="38" r="4"/>
-                    <circle cx="24" cy="24" r="3"/>
-                    <path d="M14 24h7M34 24h-7M24 14v7M24 34v-7"/>
-                  </svg>
-                </div>
+                <div class="ab-cap-no">01</div>
                 <h4>Artificial Intelligence</h4>
                 <p>
-                  Designs, trains, and evaluates deep learning models, with grounding in
-                  convolutional neural networks, transfer learning, computer vision, and
-                  natural language processing.
+                  Builds and evaluates deep learning models, including a dog emotion recognition
+                  system using a CNN and transfer learning, and applies computer vision to
+                  real systems such as face detection.
                 </p>
               </div>
-
               <div class="ab-cap">
-                <div class="ab-cap-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48">
-                    <rect x="14" y="14" width="20" height="20" rx="2"/>
-                    <rect x="19.5" y="19.5" width="9" height="9" rx="1"/>
-                    <path d="M19 8v6M24 8v6M29 8v6M19 34v6M24 34v6M29 34v6M8 19h6M8 24h6M8 29h6M34 19h6M34 24h6M34 29h6"/>
-                  </svg>
-                </div>
+                <div class="ab-cap-no">02</div>
                 <h4>Embedded Systems and IoT</h4>
                 <p>
-                  Develops connected hardware by integrating sensors and actuators with
-                  Arduino, ESP32, and Raspberry Pi, and by designing the circuits and PCBs
-                  that support them.
+                  Designs and programs hardware with Arduino, ESP32, and Raspberry Pi, including
+                  an AI based air monitoring system, an arcade game with a custom PCB, and a
+                  robotics project.
                 </p>
               </div>
-
               <div class="ab-cap">
-                <div class="ab-cap-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48">
-                    <path d="M17 15L7 24l10 9M31 15l10 9-10 9M27 12l-6 24"/>
-                  </svg>
-                </div>
+                <div class="ab-cap-no">03</div>
                 <h4>Software Development</h4>
                 <p>
-                  Builds full stack applications, from backend services and REST APIs to
-                  mobile interfaces, supported by cloud databases such as Supabase and
-                  Firebase.
+                  Develops applications and services using Python, Flask, Flutter, and REST
+                  APIs with Supabase and Firebase, as shown in PawsomeCare, a mobile app he
+                  led as developer.
                 </p>
               </div>
-
             </div>
           </section>
 
           <!-- EDUCATION -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Background</div>
             <h3 class="ab-heading">Educational Background</h3>
-            <div class="ab-edu-list">
+            <div class="ab-rule"></div>
+            <div class="ab-timeline">
 
               <div class="ab-edu ab-edu--current">
-                <div class="ab-edu-level">College</div>
-                <div>
-                  <div class="ab-edu-school">Bachelor of Science in Computer Engineering</div>
-                  <div class="ab-edu-place">Jose Rizal University</div>
-                  <div class="ab-edu-note">In progress, expected graduation June 2027</div>
-                </div>
+                <div class="ab-edu-level">Tertiary Education</div>
+                <div class="ab-edu-school">Bachelor of Science in Computer Engineering</div>
+                <div class="ab-edu-place">Jose Rizal University</div>
+                <div class="ab-edu-note">In progress, expected graduation June 2027</div>
               </div>
 
               <div class="ab-edu">
@@ -178,44 +162,48 @@
           </section>
 
           <!-- TECHNICAL SKILLS -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Expertise</div>
             <h3 class="ab-heading">Technical Skills</h3>
-            <div class="ab-skills">
-              <div class="ab-skill">
-                <div class="ab-skill-label">Programming Languages</div>
-                <div class="ab-skill-text">Python, Java, C++, JavaScript, SQL, HTML and CSS</div>
+            <div class="ab-rule"></div>
+            <div class="ab-table">
+              <div class="ab-row">
+                <div class="ab-row-label">Programming Languages</div>
+                <div class="ab-row-text">Python, Java, C++, JavaScript, SQL, HTML and CSS</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Machine Learning and AI</div>
-                <div class="ab-skill-text">Deep Learning, Convolutional Neural Networks, Transfer Learning, Computer Vision, Natural Language Processing, Model Evaluation</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Machine Learning and AI</div>
+                <div class="ab-row-text">Deep Learning, Convolutional Neural Networks, Computer Vision, Natural Language Processing, Model Evaluation</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Embedded Systems and IoT</div>
-                <div class="ab-skill-text">Arduino, ESP32, Raspberry Pi, Sensor and Actuator Integration, PCB Design</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Embedded Systems and IoT</div>
+                <div class="ab-row-text">Arduino, ESP32, Raspberry Pi, Sensor and Actuator Integration, PCB Design</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Web and Mobile</div>
-                <div class="ab-skill-text">Flask, Flutter, REST APIs</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Web and Mobile</div>
+                <div class="ab-row-text">Flask, Flutter, REST APIs</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Databases</div>
-                <div class="ab-skill-text">PostgreSQL, MySQL, Firebase, Supabase</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Databases</div>
+                <div class="ab-row-text">PostgreSQL, MySQL</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Software Engineering</div>
-                <div class="ab-skill-text">Object Oriented Programming, Data Structures and Algorithms, Full Stack Development</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Software Engineering</div>
+                <div class="ab-row-text">Object Oriented Programming, Data Structures and Algorithms, Full Stack Development</div>
               </div>
-              <div class="ab-skill">
-                <div class="ab-skill-label">Software Tools</div>
-                <div class="ab-skill-text">Visual Studio Code, PyCharm, IntelliJ IDEA, Arduino IDE, Google Colab, Jupyter Notebook, Git and GitHub, Tinkercad</div>
+              <div class="ab-row">
+                <div class="ab-row-label">Software Tools</div>
+                <div class="ab-row-text">Visual Studio Code, PyCharm, IntelliJ IDEA, Arduino IDE, Google Colab, Jupyter Notebook, Dartpad, Git and GitHub, KiCad, Tinkercad, Firebase, Supabase</div>
               </div>
             </div>
           </section>
 
           <!-- SOFT SKILLS -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Competencies</div>
             <h3 class="ab-heading">Soft Skills</h3>
-            <ul class="ab-soft">
+            <div class="ab-rule"></div>
+            <ul class="ab-list">
               <li>Problem Solving</li>
               <li>Critical Thinking</li>
               <li>Strategic Planning</li>
@@ -228,53 +216,11 @@
             </ul>
           </section>
 
-          <!-- STRENGTHS AND WEAKNESSES -->
-          <section class="ab-section">
-            <h3 class="ab-heading">Strengths and Weaknesses</h3>
-            <div class="ab-sw">
-
-              <div>
-                <h4 class="ab-sw-title">Strengths</h4>
-                <div class="ab-sw-item">
-                  <h5>Hardware and software integration</h5>
-                  <p>Builds complete systems that connect sensors, microcontrollers, databases, and applications.</p>
-                </div>
-                <div class="ab-sw-item">
-                  <h5>Technical versatility</h5>
-                  <p>Works across AI and machine learning, embedded systems, and full stack development.</p>
-                </div>
-                <div class="ab-sw-item">
-                  <h5>Self directed learning</h5>
-                  <p>Explores new tools independently and turns them into working projects.</p>
-                </div>
-                <div class="ab-sw-item">
-                  <h5>Project leadership</h5>
-                  <p>Has served as lead developer on multiple academic and personal projects.</p>
-                </div>
-              </div>
-
-              <div>
-                <h4 class="ab-sw-title">Weaknesses</h4>
-                <div class="ab-sw-item">
-                  <h5>Limited industry experience</h5>
-                  <p>Has not yet completed a professional internship, which is why he is actively seeking one.</p>
-                </div>
-                <div class="ab-sw-item">
-                  <h5>Presenting ideas</h5>
-                  <p>Still building confidence in public speaking, and improving through project demonstrations and pitch presentations.</p>
-                </div>
-                <div class="ab-sw-item">
-                  <h5>Consistency</h5>
-                  <p>Working on stronger discipline and routines so that effort stays steady across long projects.</p>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
           <!-- INTERESTS -->
-          <section class="ab-section">
+          <section class="ab-section fade-in">
+            <div class="ab-kicker">Personal</div>
             <h3 class="ab-heading">Interests</h3>
+            <div class="ab-rule"></div>
             <p>
               Outside of technology, he enjoys music, movies, video games, and reading books,
               which inspire creativity and keep a healthy balance in both academic and
