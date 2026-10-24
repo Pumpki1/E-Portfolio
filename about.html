@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me | My E-Portfolio</title>
+  <title>About Me | Khen Mhar B. Ilao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/E-Portfolio/assets/css/styles.css">
 </head>
 <body>
+
+  <!-- ========== NAVBAR ========== -->
   <nav>
     <div class="nav-logo">Khen Ilao</div>
     <ul class="nav-links">
@@ -19,144 +22,236 @@
       <li><a href="contacts.html">Contact</a></li>
     </ul>
   </nav>
+
+  <!-- ========== CONTENT ========== -->
   <div class="page">
-    <div class="container">
+    <div class="ab-wrap">
 
       <h2 class="section-title fade-in">About Me</h2>
       <div class="section-underline fade-in"></div>
 
-      <div class="ab-grid">
+      <div class="ab-layout">
 
-        <div class="ab-card ab-wide ab-profile fade-in">
-          <div class="ab-profile-top">
-            <img class="ab-photo" src="/E-Portfolio/assets/css/assets/img/profile.jpg" alt="Khen Mhar B. Ilao" width="120" height="120">
-            <div class="ab-profile-text">
-              <p class="ab-eyebrow">Computer Engineering Student</p>
-              <h3 class="ab-name">Khen Mhar B. Ilao</h3>
-              <span class="ab-status"><span class="ab-dot"></span>Open to internship and entry-level opportunities</span>
-            </div>
-          </div>
+        <!-- ===== PROFILE CARD / EDUCATION ===== -->
+        <aside class="ab-profile fade-in">
+          <img
+            src="assets/css/assets/img/profile.jpg"
+            alt="Khen Mhar B. Ilao"
+            class="ab-photo"
+            onerror="this.src='https://placehold.co/120x120/1a2e4a/ffffff?text=Photo'"
+          />
+          <div class="ab-name">Khen Mhar B. Ilao</div>
+          <div class="ab-role">BS Computer Engineering</div>
+
+          <div class="ab-divider"></div>
+
+          <div class="ab-edu-title">Education</div>
           <div class="ab-facts">
-            <div class="ab-fact"><span class="ab-fact-label">Degree</span><span class="ab-fact-value">BS Computer Engineering</span></div>
-            <div class="ab-fact"><span class="ab-fact-label">University</span><span class="ab-fact-value">Jose Rizal University</span></div>
-            <div class="ab-fact"><span class="ab-fact-label">Year Level</span><span class="ab-fact-value">Fourth Year</span></div>
-            <div class="ab-fact"><span class="ab-fact-label">Location</span><span class="ab-fact-value">Pasig City, Philippines</span></div>
-          </div>
-        </div>
-
-        <div class="ab-card ab-wide fade-in">
-          <h3 class="ab-title"><span class="ab-num">01</span>Who I Am</h3>
-          <p class="ab-lead">Khen Mhar B. Ilao is a fourth year Bachelor of Science in Computer Engineering student at Jose Rizal University. His focus is the point where software meets hardware, designing and building practical systems across embedded systems and IoT, full stack development, and artificial intelligence and machine learning.</p>
-          <p class="ab-text">His technical foundation spans Python, C++, Java, and JavaScript, platforms such as Arduino, ESP32, and Raspberry Pi, and tools including TensorFlow, OpenCV, Flask, Flutter, and Supabase. He has applied this knowledge in projects that include a dog emotion recognition model, an AI based air monitoring system, a face detection laboratory access system, and the PawsomeCare mobile application.</p>
-          <p class="ab-text">What sets him apart is curiosity and a habit of turning what he learns into working systems, through both coursework and self initiated projects. He is adaptable, collaborative, and comfortable leading a team, and he approaches problems analytically with a commitment to building reliable and ethical technology. Outside his studies, music, films, video games, and reading keep him creative and balanced.</p>
-        </div>
-
-        <div class="ab-card ab-wide fade-in">
-          <h3 class="ab-title"><span class="ab-num">02</span>Technical Skills</h3>
-          <div class="ab-skills">
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Programming Languages</span>
-              <div class="ab-chips"><span class="ab-chip">Python</span><span class="ab-chip">Java</span><span class="ab-chip">C++</span><span class="ab-chip">JavaScript</span><span class="ab-chip">SQL</span><span class="ab-chip">HTML and CSS</span></div>
+            <div>
+              <div class="ab-fact-label">Degree</div>
+              <div class="ab-fact-value">Bachelor of Science in Computer Engineering</div>
             </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Machine Learning and AI</span>
-              <div class="ab-chips"><span class="ab-chip">Deep Learning</span><span class="ab-chip">Convolutional Neural Networks</span><span class="ab-chip">Transfer Learning</span><span class="ab-chip">Computer Vision</span><span class="ab-chip">Natural Language Processing</span><span class="ab-chip">Model Evaluation</span></div>
+            <div>
+              <div class="ab-fact-label">University</div>
+              <div class="ab-fact-value">Jose Rizal University</div>
             </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Embedded Systems and IoT</span>
-              <div class="ab-chips"><span class="ab-chip">Arduino</span><span class="ab-chip">ESP32</span><span class="ab-chip">Raspberry Pi</span><span class="ab-chip">Sensor and Actuator Integration</span><span class="ab-chip">PCB Design</span></div>
+            <div>
+              <div class="ab-fact-label">Year Level</div>
+              <div class="ab-fact-value">Fourth Year</div>
             </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Software Engineering</span>
-              <div class="ab-chips"><span class="ab-chip">Object Oriented Programming</span><span class="ab-chip">Data Structures and Algorithms</span><span class="ab-chip">Backend Development</span><span class="ab-chip">Frontend Development</span><span class="ab-chip">Full Stack Development</span></div>
+            <div>
+              <div class="ab-fact-label">Expected Graduation</div>
+              <div class="ab-fact-value">June 2027</div>
             </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Web and Mobile</span>
-              <div class="ab-chips"><span class="ab-chip">Flask</span><span class="ab-chip">Flutter</span><span class="ab-chip">REST APIs</span></div>
-            </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Databases</span>
-              <div class="ab-chips"><span class="ab-chip">PostgreSQL</span><span class="ab-chip">MySQL</span><span class="ab-chip">Firebase</span><span class="ab-chip">Supabase</span></div>
-            </div>
-            <div class="ab-skill-group">
-              <span class="ab-skill-label">Software Tools</span>
-              <div class="ab-chips"><span class="ab-chip">Visual Studio Code</span><span class="ab-chip">PyCharm</span><span class="ab-chip">IntelliJ IDEA</span><span class="ab-chip">Arduino IDE</span><span class="ab-chip">Google Colab</span><span class="ab-chip">Jupyter Notebook</span><span class="ab-chip">Git and GitHub</span><span class="ab-chip">Figma</span><span class="ab-chip">Tinkercad</span><span class="ab-chip">Logisim</span></div>
+            <div>
+              <div class="ab-fact-label">Location</div>
+              <div class="ab-fact-value">Pasig City, Philippines</div>
             </div>
           </div>
-        </div>
+        </aside>
 
-        <div class="ab-card ab-wide fade-in">
-          <h3 class="ab-title"><span class="ab-num">03</span>Soft Skills</h3>
-          <div class="ab-chips">
-            <span class="ab-chip ab-chip-solid">Problem Solving</span>
-            <span class="ab-chip ab-chip-solid">Critical Thinking</span>
-            <span class="ab-chip ab-chip-solid">Strategic Planning</span>
-            <span class="ab-chip ab-chip-solid">Research</span>
-            <span class="ab-chip ab-chip-solid">Communication</span>
-            <span class="ab-chip ab-chip-solid">Teamwork and Collaboration</span>
-            <span class="ab-chip ab-chip-solid">Creativity</span>
-            <span class="ab-chip ab-chip-solid">Adaptability</span>
-            <span class="ab-chip ab-chip-solid">Leadership</span>
-          </div>
-        </div>
+        <!-- ===== MAIN COLUMN ===== -->
+        <div class="ab-main">
 
-        <div class="ab-card ab-wide fade-in">
-          <h3 class="ab-title"><span class="ab-num">04</span>Educational Background</h3>
-          <div class="ab-timeline">
-            <div class="ab-tl-item ab-tl-current">
-              <div class="ab-tl-head"><span class="ab-tl-level">College</span><span class="ab-tl-date">2023 – Present</span></div>
-              <h4>Jose Rizal University</h4>
-              <p>Bachelor of Science in Computer Engineering</p>
+          <!-- WHO I AM -->
+          <section class="ab-section fade-in">
+            <h3>Who I Am</h3>
+            <div class="ab-rule"></div>
+            <p>
+              Khen Mhar B. Ilao is a fourth year Bachelor of Science in Computer Engineering
+              student at Jose Rizal University. He builds practical solutions where software
+              meets hardware, working across artificial intelligence, embedded systems, IoT,
+              and full stack development.
+            </p>
+            <p>
+              His path into Computer Engineering began with a genuine liking for computers and
+              a fascination with how a computer and an application actually work, especially
+              games. That curiosity never faded. Learning new things is what drives him most,
+              and he is at his best in the moment he discovers something he did not know was
+              possible and decides he must learn it.
+            </p>
+          </section>
+
+          <!-- WHAT I CAN DO -->
+          <section class="ab-section fade-in">
+            <h3>What I Can Do</h3>
+            <div class="ab-rule"></div>
+            <div class="ab-cap-grid">
+              <div class="ab-cap">
+                <h4>Artificial Intelligence</h4>
+                <p>
+                  Builds and evaluates deep learning models, including a dog emotion recognition
+                  system using a CNN and transfer learning, and applies computer vision to
+                  real systems such as face detection.
+                </p>
+              </div>
+              <div class="ab-cap">
+                <h4>Embedded Systems and IoT</h4>
+                <p>
+                  Designs and programs hardware with Arduino, ESP32, and Raspberry Pi, including
+                  an AI based air monitoring system, an arcade game with a custom PCB, and a
+                  robotics project.
+                </p>
+              </div>
+              <div class="ab-cap">
+                <h4>Software Development</h4>
+                <p>
+                  Develops applications and services using Python, Flask, Flutter, and REST
+                  APIs with Supabase and Firebase, as shown in PawsomeCare, a mobile app he
+                  led as developer.
+                </p>
+              </div>
             </div>
-            <div class="ab-tl-item">
-              <div class="ab-tl-head"><span class="ab-tl-level">Senior High School</span><span class="ab-tl-date">2021 – 2023</span></div>
-              <h4>Rizal High School</h4>
-              <p>Science, Technology, Engineering and Mathematics (STEM), With Honors</p>
+          </section>
+
+          <!-- CAREER OBJECTIVE -->
+          <section class="ab-section fade-in">
+            <h3>Career Objective</h3>
+            <div class="ab-rule"></div>
+            <p>
+              He is seeking internship and entry level opportunities where he can apply his
+              technical skills, gain industry experience, and contribute to innovative
+              engineering projects while growing as a Computer Engineer.
+            </p>
+          </section>
+
+          <!-- TECHNICAL SKILLS -->
+          <section class="ab-section fade-in">
+            <h3>Technical Skills</h3>
+            <div class="ab-rule"></div>
+
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Programming Languages</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Python</span>
+                <span class="ab-tag">Java</span>
+                <span class="ab-tag">C++</span>
+                <span class="ab-tag">JavaScript</span>
+                <span class="ab-tag">SQL</span>
+                <span class="ab-tag">HTML and CSS</span>
+              </div>
             </div>
-            <div class="ab-tl-item">
-              <div class="ab-tl-head"><span class="ab-tl-level">Junior High School</span></div>
-              <h4>Rizal High School</h4>
+
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Machine Learning and AI</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Deep Learning</span>
+                <span class="ab-tag">Convolutional Neural Networks</span>
+                <span class="ab-tag">Transfer Learning</span>
+                <span class="ab-tag">Computer Vision</span>
+                <span class="ab-tag">Natural Language Processing</span>
+                <span class="ab-tag">Model Evaluation</span>
+              </div>
             </div>
-            <div class="ab-tl-item">
-              <div class="ab-tl-head"><span class="ab-tl-level">Elementary</span></div>
-              <h4>Pasig Central Elementary School</h4>
+
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Embedded Systems and IoT</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Arduino</span>
+                <span class="ab-tag">ESP32</span>
+                <span class="ab-tag">Raspberry Pi</span>
+                <span class="ab-tag">Sensor and Actuator Integration</span>
+                <span class="ab-tag">PCB Design</span>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="ab-card fade-in">
-          <h3 class="ab-title"><span class="ab-num">05</span>Strengths</h3>
-          <ul class="ab-list ab-list-strength">
-            <li><strong>Hardware and software integration</strong><span>Builds complete systems that connect sensors, microcontrollers, databases, and applications.</span></li>
-            <li><strong>Technical versatility</strong><span>Works across AI and machine learning, embedded systems, and full stack development.</span></li>
-            <li><strong>Self directed learning</strong><span>Explores new tools independently and turns them into working projects.</span></li>
-            <li><strong>Project leadership</strong><span>Has served as lead developer on multiple academic and personal projects.</span></li>
-          </ul>
-        </div>
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Web and Mobile</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Flask</span>
+                <span class="ab-tag">Flutter</span>
+                <span class="ab-tag">REST APIs</span>
+              </div>
+            </div>
 
-        <div class="ab-card fade-in">
-          <h3 class="ab-title"><span class="ab-num">06</span>Areas for Growth</h3>
-          <ul class="ab-list ab-list-growth">
-            <li><strong>Limited industry experience</strong><span>Has not yet completed a professional internship, which is why he is actively seeking one.</span></li>
-            <li><strong>Presenting ideas</strong><span>Still building confidence in public speaking, and improving through project demonstrations and pitch presentations.</span></li>
-            <li><strong>Consistency</strong><span>Working on stronger discipline and routines so that effort stays steady across long projects.</span></li>
-          </ul>
-        </div>
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Databases</div>
+              <div class="ab-tags">
+                <span class="ab-tag">PostgreSQL</span>
+                <span class="ab-tag">MySQL</span>
+                <span class="ab-tag">Firebase</span>
+                <span class="ab-tag">Supabase</span>
+              </div>
+            </div>
 
-        <div class="ab-card ab-wide fade-in">
-          <h3 class="ab-title"><span class="ab-num">07</span>Personal Goals</h3>
-          <ol class="ab-goals">
-            <li>Become more disciplined, responsible, and consistent in studies and daily life</li>
-            <li>Improve communication and teamwork skills when working on projects</li>
-            <li>Develop confidence in presenting ideas and solving technical challenges</li>
-            <li>Build leadership skills through collaboration and participation in activities</li>
-            <li>Grow into a reliable and ethical future engineer</li>
-          </ol>
-        </div>
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Software Engineering</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Object Oriented Programming</span>
+                <span class="ab-tag">Data Structures and Algorithms</span>
+                <span class="ab-tag">Full Stack Development</span>
+              </div>
+            </div>
 
+            <div class="ab-skill-group">
+              <div class="ab-skill-title">Software Tools</div>
+              <div class="ab-tags">
+                <span class="ab-tag">Visual Studio Code</span>
+                <span class="ab-tag">PyCharm</span>
+                <span class="ab-tag">IntelliJ IDEA</span>
+                <span class="ab-tag">Arduino IDE</span>
+                <span class="ab-tag">Google Colab</span>
+                <span class="ab-tag">Jupyter Notebook</span>
+                <span class="ab-tag">Git and GitHub</span>
+                <span class="ab-tag">Tinkercad</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SOFT SKILLS -->
+          <section class="ab-section fade-in">
+            <h3>Soft Skills</h3>
+            <div class="ab-rule"></div>
+            <div class="ab-tags">
+              <span class="ab-tag ab-tag--soft">Problem Solving</span>
+              <span class="ab-tag ab-tag--soft">Critical Thinking</span>
+              <span class="ab-tag ab-tag--soft">Strategic Planning</span>
+              <span class="ab-tag ab-tag--soft">Research</span>
+              <span class="ab-tag ab-tag--soft">Communication</span>
+              <span class="ab-tag ab-tag--soft">Teamwork and Collaboration</span>
+              <span class="ab-tag ab-tag--soft">Creativity</span>
+              <span class="ab-tag ab-tag--soft">Adaptability</span>
+              <span class="ab-tag ab-tag--soft">Leadership</span>
+            </div>
+          </section>
+
+          <!-- INTERESTS -->
+          <section class="ab-section fade-in">
+            <h3>Interests</h3>
+            <div class="ab-rule"></div>
+            <p>
+              Outside of technology, he enjoys music, movies, video games, and reading books,
+              which inspire creativity and keep a healthy balance in both academic and
+              personal life.
+            </p>
+          </section>
+
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- ========== FOOTER ========== -->
   <footer>
     <p>&copy; 2026 Khen Mhar B. Ilao. All rights reserved.</p>
   </footer>
