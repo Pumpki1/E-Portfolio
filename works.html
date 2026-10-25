@@ -42,14 +42,13 @@
           <div class="rw-body">
             <h3 class="rw-title">Dog Emotion Recognition</h3>
             <p class="rw-desc">
-              A deep learning study that classifies the emotional state of dogs from images into
-              four categories, which are happy, sad, angry, and relaxed, in support of automated
-              animal health monitoring. The project compares a custom convolutional neural
-              network against a MobileNetV2 transfer learning model, both trained on the same
-              balanced dataset of 800 labeled images prepared through resizing, normalization,
-              and data augmentation. The transfer learning model reached 80% accuracy on unseen
-              test data, compared with 26.1% for the custom network, which shows the advantage
-              of pre-trained features on small datasets.
+              A deep learning study that classifies the emotional state of dogs from images into four
+              categories, which are happy, sad, angry, and relaxed, in support of automated animal health
+              monitoring. The project compares a custom convolutional neural network against a MobileNetV2
+              transfer learning model, both trained on the same balanced dataset of 800 labeled images
+              prepared through resizing, normalization, and data augmentation. The transfer learning model
+              reached 80% accuracy on unseen test data, compared with 26.1% for the custom network, which
+              shows the advantage of pre-trained features on small datasets.
             </p>
             <dl class="rw-specs">
               <div class="rw-spec">
@@ -73,20 +72,21 @@
           <div class="rw-side">
             <div class="rw-kicker">Embedded Systems and IoT</div>
             <div class="rw-course">CPE C306 Microprocessors</div>
-            <div class="rw-date">February 2026</div>
+            <div class="rw-date">February to April 2026</div>
           </div>
           <div class="rw-body">
             <h3 class="rw-title">AI Based Air Monitoring System</h3>
             <p class="rw-desc">
-              An Arduino based indoor air quality monitor that responds to hazards instead of
-              only reporting them. Four gas sensors covering smoke and flammable gases, alcohol
-              and chemical vapors, carbon monoxide, and general air quality feed an adaptive model
-              that learns the normal air baseline during a five minute training period and stores
-              it in EEPROM. Filtered readings are then checked for anomalies using Z-score and
-              median absolute deviation analysis, graded across four warning levels shown through
-              LED indicators, an I2C display, and a buzzer. A dangerous level automatically
-              switches on an exhaust fan, and a retrain button allows the system to recalibrate
-              to a new environment.
+              An ESP32 based indoor air quality monitor that detects hazardous gases and responds to them
+              automatically. Four MQ series gas sensors are read every 100 milliseconds and cleaned
+              through median, moving average, and Kalman filtering, and an Edge Impulse anomaly detection
+              model running on the device scores how far the combined readings deviate from normal air.
+              The system identifies the dominant gas, grades the air as Normal, Low, Moderate, or
+              Dangerous, and drives LED indicators, a buzzer, an LCD, and an exhaust fan that starts at
+              the dangerous level. A web dashboard shows live readings, thirty minute aggregated trends,
+              and a sensor correlation matrix, raises on screen alerts, and stores its data in Supabase.
+              The project began as an Arduino Uno prototype that learned its normal air baseline on the
+              board.
             </p>
             <dl class="rw-specs">
               <div class="rw-spec">
@@ -95,7 +95,7 @@
               </div>
               <div class="rw-spec">
                 <dt>Software and Tools</dt>
-                <dd>Arduino IDE, Arduino C++</dd>
+                <dd>Arduino IDE, Arduino C++, Edge Impulse, Supabase</dd>
               </div>
               <div class="rw-spec">
                 <dt>Libraries and Frameworks</dt>
@@ -115,14 +115,13 @@
           <div class="rw-body">
             <h3 class="rw-title">CPU Escape Box</h3>
             <p class="rw-desc">
-              An interactive mini arcade system that teaches computer architecture through
-              gameplay. Players trace register level instructions across Easy, Medium, and Hard
-              levels within a five minute countdown, using a joystick and push buttons on a
-              2.8 inch display. The system includes user registration and profile management with
-              create, read, update, and delete functions, a Top 20 leaderboard, and persistent
-              storage in the Arduino EEPROM. Completing every level in time energizes a solenoid
-              lock that opens a reward compartment, and the electronics are housed in a
-              cyber themed arcade cabinet.
+              An interactive mini arcade system that teaches computer architecture through gameplay.
+              Players trace register level instructions across Easy, Medium, and Hard levels within a five
+              minute countdown, using a joystick and push buttons on a 2.8 inch display. The system
+              includes user registration and profile management with create, read, update, and delete
+              functions, a Top 20 leaderboard, and persistent storage in the Arduino EEPROM. Completing
+              every level in time energizes a solenoid lock that opens a reward compartment, and the
+              electronics are housed in a cyber themed arcade cabinet.
             </p>
             <dl class="rw-specs">
               <div class="rw-spec">
@@ -151,15 +150,14 @@
           <div class="rw-body">
             <h3 class="rw-title">Laboratory Access through Face Detection</h3>
             <p class="rw-desc">
-              A face recognition access control system for laboratory rooms, designed to replace
-              manual logbooks and physical keys with automated identification. A Raspberry Pi
-              enhances each camera frame through a digital signal processing chain of bilateral
-              filtering, adaptive histogram equalization, and sharpening, detects faces with a
-              Haar cascade, and matches them against registered users using deep learning face
-              embeddings. A recognized person receives an Access Granted message on an LCD and a
-              buzzer confirmation while a servo motor opens the door, and unrecognized faces are
-              denied with a short retry delay. Every access attempt is recorded in a Supabase
-              database.
+              A face recognition access control system for laboratory rooms, designed to replace manual
+              logbooks and physical keys with automated identification. A Raspberry Pi enhances each
+              webcam frame through a digital signal processing chain of bilateral filtering, adaptive
+              histogram equalization, and sharpening, detects faces with a Haar cascade, and matches them
+              against registered users using deep learning face embeddings. A recognized person receives
+              an Access Granted message on an LCD and a buzzer confirmation while a servo motor opens the
+              door, and unrecognized faces are denied with a short retry delay. Every access attempt is
+              recorded in a Supabase database.
             </p>
             <dl class="rw-specs">
               <div class="rw-spec">
@@ -172,7 +170,65 @@
               </div>
               <div class="rw-spec">
                 <dt>Libraries and Frameworks</dt>
-                <dd>OpenCV, NumPy, face_recognition, RPi.GPIO, RPLCD, Picamera2</dd>
+                <dd>OpenCV, NumPy, face_recognition, RPi.GPIO, RPLCD</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== AUTOMATED RFID SYSTEM FOR LABORATORY BORROWING AND RECORD LOGGING ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Embedded Systems and IoT</div>
+            <div class="rw-course">CPE C206 Feedback and Control System</div>
+            <div class="rw-date">November 2025</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">Automated RFID System for Laboratory Borrowing and Record Logging</h3>
+            <p class="rw-desc">
+              An automated system that replaces the paper based process for borrowing laboratory
+              equipment. A student or faculty member taps an RFID card on an RC522 reader connected to an
+              ESP32, which checks the card against the registered users, records the borrow or return
+              transaction, and displays a confirmation. Unregistered cards are denied, and repeated taps
+              in quick succession are logged as a single transaction. Transactions are stored in a
+              Supabase database.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Frontend Developer, Hardware Enclosure Designer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Visual Studio Code, Supabase, GitHub</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== ATAKI MICROMOUSE ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Robotics and Embedded Systems</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">ATAKI Micromouse</h3>
+            <p class="rw-desc">
+              An autonomous micromouse robot built on a two wheel chassis and controlled by an Arduino
+              Uno, designed to navigate a maze without human input. Three ultrasonic sensors measure the
+              distance to the walls ahead and on both sides, and a motor driver controls the two drive
+              motors. The navigation logic is reactive: the robot stops at a front wall, checks the open
+              directions on its left and right, and steers using the side sensors to stay clear of the
+              walls.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Robotics Engineer, Embedded Systems Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Arduino IDE, Arduino C++</dd>
               </div>
             </dl>
           </div>
@@ -183,18 +239,17 @@
           <div class="rw-side">
             <div class="rw-kicker">Mobile Application</div>
             <div class="rw-course">CPE C308 Cognate 2</div>
-            <div class="rw-date">March 2026</div>
+            <div class="rw-date">2026</div>
           </div>
           <div class="rw-body">
             <h3 class="rw-title">PawsomeCare</h3>
             <p class="rw-desc">
-              A pet healthcare platform designed to centralize pet health management in a single,
-              secure mobile application. The design covers pet profiles and digital health
-              records, clinic appointment booking, automated vaccination and medication
-              reminders, behavioral tracking that flags unusual changes, a shelter adoption
-              module, and an integrated pet store, serving pet owners, veterinary clinics,
-              shelters, and partner stores. The mobile application is developed with Flutter and
-              Firebase.
+              A mobile application that centralizes pet healthcare for pet owners and veterinary clinics.
+              Owners register their pets, keep health records, vaccination history, and documents, book
+              clinic appointments, browse pets for adoption, and order pet products, while a separate
+              clinic portal lets clinics manage booking requests, schedules, patients, and their own
+              profiles. Accounts are role based and secured with Firebase Authentication, and all data is
+              stored in Cloud Firestore.
             </p>
             <dl class="rw-specs">
               <div class="rw-spec">
@@ -207,7 +262,93 @@
               </div>
               <div class="rw-spec">
                 <dt>Libraries and Frameworks</dt>
-                <dd>Flutter</dd>
+                <dd>Flutter, firebase_core, firebase_auth, cloud_firestore, image_picker</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== BARANGAY POBLACION PORTAL ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Web Application</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">Barangay Poblacion Portal</h3>
+            <p class="rw-desc">
+              A web portal that digitizes document requests and complaint filing for the residents of
+              Barangay Poblacion. Residents sign in to request official documents and to file complaints
+              for barangay mediation, then follow the status of each submission in a table. An
+              administrator, verified through a code, reviews every request and complaint from a dashboard
+              and approves or rejects it. The portal also lists the barangay hotline and emergency numbers
+              and is deployed on PythonAnywhere.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Backend Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Visual Studio Code, HTML, CSS, JavaScript, Python, PythonAnywhere, GitHub, Supabase</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== RIZZALIAN, ALUMNI RECORD AND NETWORKING ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Web Application</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">Rizzalian, Alumni Record and Networking</h3>
+            <p class="rw-desc">
+              A web based platform designed to help Jose Rizal University alumni maintain their alumni
+              records and connect with fellow graduates through a centralized online system. The platform
+              is hosted on Netlify and uses Supabase as its database.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Frontend Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Visual Studio Code, HTML, CSS, JavaScript, Supabase, Netlify, GitHub</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== AUDIVO ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Web Application</div>
+            <div class="rw-course">CPE C305 Digital Signal Processing</div>
+            <div class="rw-date">March 2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">AudiVo</h3>
+            <p class="rw-desc">
+              A website, with the tagline Where Text Speaks and Voice Writes, that converts text to speech
+              and speech to text across languages. Users type English text and hear it spoken in Korean,
+              Mandarin, Japanese, or Tagalog, or they speak in one of those languages and receive the
+              translated English text. The application uses Transformers.js and the Web Speech API behind
+              a simple interface for choosing between the two functions.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Technical Advisor, QA Tester</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Visual Studio Code, HTML, CSS, JavaScript</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>Transformers.js, Web Speech API</dd>
               </div>
             </dl>
           </div>
