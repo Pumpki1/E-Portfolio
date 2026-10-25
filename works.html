@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Relevant Works | E-Portfolio</title>
+  <title>Relevant Works | Khen Mhar B. Ilao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/E-Portfolio/assets/css/styles.css">
 </head>
 <body>
@@ -24,211 +25,195 @@
 
   <!-- ========== CONTENT ========== -->
   <div class="page">
-    <div class="container">
+    <div class="rw-wrap">
 
-      <h2 class="section-title fade-in">Relevant Works</h2>
-      <div class="section-underline fade-in"></div>
-      <p class="fade-in" style="color: var(--gray-text); margin-bottom: 2rem; font-size: 0.95rem;">
-        A collection of academic works, projects, and outputs from my courses
-        in BS Computer Engineering.
-      </p>
+      <h2 class="section-title">Relevant Works</h2>
+      <div class="section-underline"></div>
 
-      <!-- ========== COURSE TABS ========== -->
-      <div class="tabs fade-in">
-        <button class="tab-btn active" data-tab="cpe-c313">CPE C313 — Artificial Intelligence 1</button>
-        <button class="tab-btn" data-tab="egr-c204">EGR-C204 — Technopreneurship</button>
+      <div class="rw-sheet">
+
+        <!-- ===== DOG EMOTION RECOGNITION ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Artificial Intelligence</div>
+            <div class="rw-course">CPE C313 Artificial Intelligence 1</div>
+            <div class="rw-date">2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">Dog Emotion Recognition</h3>
+            <p class="rw-desc">
+              A deep learning study that classifies the emotional state of dogs from images into
+              four categories, which are happy, sad, angry, and relaxed, in support of automated
+              animal health monitoring. The project compares a custom convolutional neural
+              network against a MobileNetV2 transfer learning model, both trained on the same
+              balanced dataset of 800 labeled images prepared through resizing, normalization,
+              and data augmentation. The transfer learning model reached 80% accuracy on unseen
+              test data, compared with 26.1% for the custom network, which shows the advantage
+              of pre-trained features on small datasets.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Machine Learning Engineer, Backend Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Python, Visual Studio Code, Kaggle</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>TensorFlow, Keras, OpenCV, Matplotlib, Seaborn, Flask</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== AI BASED AIR MONITORING SYSTEM ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Embedded Systems and IoT</div>
+            <div class="rw-course">CPE C306 Microprocessors</div>
+            <div class="rw-date">February 2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">AI Based Air Monitoring System</h3>
+            <p class="rw-desc">
+              An Arduino based indoor air quality monitor that responds to hazards instead of
+              only reporting them. Four gas sensors covering smoke and flammable gases, alcohol
+              and chemical vapors, carbon monoxide, and general air quality feed an adaptive model
+              that learns the normal air baseline during a five minute training period and stores
+              it in EEPROM. Filtered readings are then checked for anomalies using Z-score and
+              median absolute deviation analysis, graded across four warning levels shown through
+              LED indicators, an I2C display, and a buzzer. A dangerous level automatically
+              switches on an exhaust fan, and a retrain button allows the system to recalibrate
+              to a new environment.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Embedded Systems Developer, IoT Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Arduino IDE, Arduino C++</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>Wire, LiquidCrystal_I2C, EEPROM</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== CPU ESCAPE BOX ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Embedded Systems</div>
+            <div class="rw-course">CPE C401 Computer Architecture and Organization</div>
+            <div class="rw-date">July 2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">CPU Escape Box</h3>
+            <p class="rw-desc">
+              An interactive mini arcade system that teaches computer architecture through
+              gameplay. Players trace register level instructions across Easy, Medium, and Hard
+              levels within a five minute countdown, using a joystick and push buttons on a
+              2.8 inch display. The system includes user registration and profile management with
+              create, read, update, and delete functions, a Top 20 leaderboard, and persistent
+              storage in the Arduino EEPROM. Completing every level in time energizes a solenoid
+              lock that opens a reward compartment, and the electronics are housed in a
+              cyber themed arcade cabinet.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Embedded Systems Developer, PCB Designer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Arduino IDE, Arduino C++, KiCad, SketchUp</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>Adafruit_GFX, Adafruit TouchScreen, MCUFRIEND_kbv, Wire, EEPROM</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== LABORATORY ACCESS THROUGH FACE DETECTION ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Embedded Systems and Computer Vision</div>
+            <div class="rw-course">CPE C306 Microprocessors and Digital Signal Processing</div>
+            <div class="rw-date">May 2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">Laboratory Access through Face Detection</h3>
+            <p class="rw-desc">
+              A face recognition access control system for laboratory rooms, designed to replace
+              manual logbooks and physical keys with automated identification. A Raspberry Pi
+              enhances each camera frame through a digital signal processing chain of bilateral
+              filtering, adaptive histogram equalization, and sharpening, detects faces with a
+              Haar cascade, and matches them against registered users using deep learning face
+              embeddings. A recognized person receives an Access Granted message on an LCD and a
+              buzzer confirmation while a servo motor opens the door, and unrecognized faces are
+              denied with a short retry delay. Every access attempt is recorded in a Supabase
+              database.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Embedded Systems Developer, Computer Vision Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Raspberry Pi OS, Python, Supabase</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>OpenCV, NumPy, face_recognition, RPi.GPIO, RPLCD, Picamera2</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- ===== PAWSOMECARE ===== -->
+        <article class="rw-project">
+          <div class="rw-side">
+            <div class="rw-kicker">Mobile Application</div>
+            <div class="rw-course">CPE C308 Cognate 2</div>
+            <div class="rw-date">March 2026</div>
+          </div>
+          <div class="rw-body">
+            <h3 class="rw-title">PawsomeCare</h3>
+            <p class="rw-desc">
+              A pet healthcare platform designed to centralize pet health management in a single,
+              secure mobile application. The design covers pet profiles and digital health
+              records, clinic appointment booking, automated vaccination and medication
+              reminders, behavioral tracking that flags unusual changes, a shelter adoption
+              module, and an integrated pet store, serving pet owners, veterinary clinics,
+              shelters, and partner stores. The mobile application is developed with Flutter and
+              Firebase.
+            </p>
+            <dl class="rw-specs">
+              <div class="rw-spec">
+                <dt>Role</dt>
+                <dd>Lead Developer, Mobile App Developer</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Software and Tools</dt>
+                <dd>Dart, DartPad, Firebase</dd>
+              </div>
+              <div class="rw-spec">
+                <dt>Libraries and Frameworks</dt>
+                <dd>Flutter</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
       </div>
-
-      <!-- ========== CPE C313 TAB ========== -->
-      <div class="tab-content active" id="cpe-c313">
-        <div class="cards-grid">
-
-          <!-- ARTIFACT 1 -->
-          <div class="card fade-in">
-            <iframe
-              src="assets/css/assets/RelevantWorks/Ai/AWS Challenges.pdf"
-              class="pdf-preview">
-            </iframe>
-            <div class="card-type">Artifact 1</div>
-            <h3>Compilation of Activities</h3>
-            <p>
-              A compiled PDF of all laboratory activities and performance tasks
-              completed throughout the course.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Demonstrates ability to apply
-              AI concepts through hands-on laboratory work.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Strengthened my understanding of
-              AI algorithms and their real-world applications.
-            </p>
-            <a href="assets/css/assets/RelevantWorks/Ai/AWS Challenges.pdf" target="_blank" class="card-link">View File</a>
-          </div>
-
-          <!-- ARTIFACT 2 -->
-          <div class="card fade-in">
-            <iframe
-              src="assets/css/assets/RelevantWorks/Ai/TriMindTech_Project Documentation.pdf"
-              class="pdf-preview">
-            </iframe>
-            <div class="card-type">Artifact 2</div>
-            <h3>Journal Article</h3>
-            <p>
-              A journal article discussing a relevant topic in the field of
-              Artificial Intelligence, focusing on dogs emotion detection using
-              a CNN and MobileNetV2 model.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Enhances technical communication
-              and research skills in the context of AI.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Developed my ability to critically
-              analyze and communicate AI research effectively.
-            </p>
-            <a href="assets/css/assets/RelevantWorks/Ai/TriMindTech_Project Documentation.pdf" target="_blank" class="card-link">View File</a>
-          </div>
-
-          <!-- ARTIFACT 3 -->
-          <div class="card fade-in">
-            <iframe
-              src="assets/css/assets/RelevantWorks/Ai/AI Project Source Code_TriMindTech.pdf"
-              class="pdf-preview">
-            </iframe>
-            <div class="card-type">Artifact 3</div>
-            <h3>AI Project Source Code</h3>
-            <p>
-              Source code of the AI project developed during the course,
-              exported from VS Code. Featuring a CNN and a MobileNetV2 model.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Demonstrates ability to design,
-              implement, and document AI-based solutions.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Built practical experience in
-              developing and deploying AI models.
-            </p>
-            <a href="assets/css/assets/RelevantWorks/Ai/AI Project Source Code_TriMindTech.pdf" target="_blank" class="card-link">View File</a>
-          </div>
-
-          <!-- ARTIFACT 4 -->
-          <div class="card fade-in">
-            <div class="card-icon">🎬</div>
-            <div class="card-type">Artifact 4</div>
-            <h3>Working Model Demo</h3>
-            <p>
-              A video demonstration of the working AI model, 
-              web application developed for the course.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Showcases ability to build and
-              present functional AI-powered systems.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Gained experience in prototyping
-              and presenting technical solutions clearly.
-            </p>
-            <a href="https://drive.google.com/file/d/115XC4IG-SsvipDErAHbl_4RLyigEYvny/preview" target="_blank" class="card-link">Watch Video</a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ========== EGR-C204 TAB ========== -->
-      <div class="tab-content" id="egr-c204">
-        <div class="cards-grid">
-
-          <!-- ARTIFACT 1 -->
-          <div class="card fade-in">
-            <iframe
-              src="assets/css/assets/RelevantWorks/Techno/venture-journey.pdf"
-              class="pdf-preview">
-            </iframe>
-            <div class="card-type">Artifact 1</div>
-            <h3>Wadhwani Milestones 1–3</h3>
-            <p>
-              A compiled PDF of Wadhwani Milestones 1 through 3, documenting
-              the progress of our entrepreneurial project.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Demonstrates ability to apply
-              engineering solutions in an entrepreneurial context.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Developed an entrepreneurial
-              mindset and learned to validate ideas systematically.
-            </p>
-            <a href="assets/css/assets/RelevantWorks/Techno/venture-journey.pdf" target="_blank" class="card-link">View File</a>
-          </div>
-
-          <!-- ARTIFACT 2 -->
-          <div class="card fade-in">
-            <div class="card-icon">🎬</div>
-            <div class="card-type">Artifact 2</div>
-            <h3>MVP Demo</h3>
-            <p>
-              A demonstration of our Minimum Viable Product, showcasing
-              the core features of our PawsomeCare project.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Reflects ability to design
-              and prototype solutions for real-world problems.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Strengthened my ability to turn
-              ideas into tangible, working products.
-            </p>
-            <a href="https://drive.google.com/file/d/16c8IXW9iCNOAEmsRIWuvR0zhNYMxNBD3/preview" target="_blank" class="card-link">Watch Demo</a>
-          </div>
-
-          <!-- ARTIFACT 3 -->
-          <div class="card fade-in">
-            <iframe
-              src="assets/css/assets/RelevantWorks/Techno/PawsomeCare_Pitch_Deck.pdf"
-              class="pdf-preview">
-            </iframe>
-            <div class="card-type">Artifact 3</div>
-            <h3>Final Pitch Deck</h3>
-            <p>
-              The final pitch deck presentation used to present our
-              technopreneurship project to an audience.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Demonstrates communication,
-              teamwork, and technical presentation skills.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Improved my ability to present
-              complex ideas in a clear and compelling way.
-            </p>
-            <a href="assets/css/assets/RelevantWorks/Techno/PawsomeCare_Pitch_Deck.pdf" target="_blank" class="card-link">View File</a>
-          </div>
-
-          <!-- ARTIFACT 4 -->
-          <div class="card fade-in">
-            <div class="card-icon">🎬</div>
-            <div class="card-type">Artifact 4</div>
-            <h3>Video Pitch</h3>
-            <p>
-              A recorded video pitch presenting our technopreneurship
-              project, its value proposition, and our team's vision.
-            </p>
-            <p style="font-size:0.82rem; color: var(--navy); margin-bottom: 0.5rem;">
-              <strong>SO Contribution:</strong> Showcases ability to
-              communicate engineering solutions to a broader audience.
-            </p>
-            <p style="font-size:0.82rem; color: var(--gray-text); margin-bottom: 1rem;">
-              <strong>Personal Goal:</strong> Built confidence in public
-              speaking and pitching technical ideas professionally.
-            </p>
-            <a href="https://drive.google.com/file/d/1RmhfmjpZziyKURtMTsVAna5h_323Qm9d/preview" target="_blank" class="card-link">Watch Pitch</a>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </div>
 
