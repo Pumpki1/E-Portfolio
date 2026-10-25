@@ -73,19 +73,19 @@
         <section class="ab-section">
           <div class="hm-stats">
             <div class="hm-stat">
-              <div class="hm-stat-num">6</div>
+              <div class="hm-stat-num" data-stat="projects">6</div>
               <div class="hm-stat-label">Projects Built</div>
             </div>
             <div class="hm-stat">
-              <div class="hm-stat-num">5</div>
+              <div class="hm-stat-num" data-stat="certifications">5</div>
               <div class="hm-stat-label">Certifications</div>
             </div>
             <div class="hm-stat">
-              <div class="hm-stat-num">4</div>
+              <div class="hm-stat-num" data-stat="awards">4</div>
               <div class="hm-stat-label">Awards and Honors</div>
             </div>
             <div class="hm-stat">
-              <div class="hm-stat-num">3</div>
+              <div class="hm-stat-num" data-stat="seminars">3</div>
               <div class="hm-stat-label">Seminars Attended</div>
             </div>
           </div>
@@ -205,5 +205,30 @@
   </footer>
 
   <script src="/E-Portfolio/assets/css/assets/js/nav.js"></script>
+  <script>
+    (function () {
+      var sources = [
+        { url: '/E-Portfolio/works.html', counts: { projects: '.rw-project' } },
+        { url: '/E-Portfolio/achievements.html', counts: {
+            certifications: '[data-count="certifications"] > .ac-item',
+            awards: '[data-count="awards"] > .ac-item',
+            seminars: '[data-count="seminars"] > .ac-item'
+        } }
+      ];
+      sources.forEach(function (source) {
+        fetch(source.url, { cache: 'no-cache' })
+          .then(function (res) { return res.ok ? res.text() : Promise.reject(); })
+          .then(function (text) {
+            var doc = new DOMParser().parseFromString(text, 'text/html');
+            Object.keys(source.counts).forEach(function (key) {
+              var n = doc.querySelectorAll(source.counts[key]).length;
+              var el = document.querySelector('[data-stat="' + key + '"]');
+              if (el && n > 0) el.textContent = n;
+            });
+          })
+          .catch(function () {});
+      });
+    })();
+  </script>
 </body>
 </html>
